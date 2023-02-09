@@ -32,4 +32,6 @@ The following package(s) will be linked dynamically because it is discouraged li
 Before you start you must install arm64-based Homebrew to `/opt/homebrew`.
 
 1. Clone this repository.
-2. Run `./build.bash`.
+2. Run `./build_1.sh`.
+3. Run `./build_2.sh`.
+4. Run `./build_3.sh`.
