@@ -4,6 +4,7 @@ function build_ffmpeg () {
   echo '♻️ ' Start compiling FFMPEG
   cd ${CMPLD}
   cd ffmpeg
+  sed -i '2243c \        } else if (ist->dec_ctx->codec_id != AV_CODEC_ID_AVS3)' fftools/ffmpeg.c
   export LDFLAGS="-L${SRC}/lib ${LDFLAGS:-}"
   export CFLAGS="-I${SRC}/include ${CFLAGS:-}"
   export LDFLAGS="$LDFLAGS -lexpat -lenca -lfribidi -liconv -lstdc++ -lfreetype -framework CoreText -framework VideoToolbox"
